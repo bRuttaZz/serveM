@@ -2,7 +2,31 @@
 
 A simple screen sharing server for modern GNU/LINUX desktops!
 
-# Usage
+## Installation
+
+**Dependencies**
+
+- A GNU/Linux desktop with GLib availability and the python 'gi' (GObject Introspection) (usually almost all popular distros came with it)
+- Gstreamer and jpeg encoders installed. If not available execute the following commands
+```sh
+# for debian based distros
+sudo apt-get install gstreamer1.0-tools gstreamer1.0-plugins-base gstreamer1.0-plugins-good
+
+# for fedora / ..
+sudo dnf install gstreamer1 gstreamer1-plugins-base gstreamer1-plugins-good
+
+# arch linux
+sudo pacman -S gstreamer
+```
+
+
+Lastly, the service is packaged as a Python CLI that can be installed with,
+```sh
+pip3 install servem
+```
+
+
+## Usage
 
 The tool is meant to be used as a command line utility. After installation of the package one can follow the bellow mentioned commands to get started
 ```sh
@@ -14,7 +38,7 @@ servem --cursor
 ```
 
 
-# The Story & The Name
+## The Story & The Name
 
 BTW, this repo was not originally intended to be a Python one... (poor me, lacking time and expertise in GLib conventions).
 Anyway, hopefully, it's here and it's working.

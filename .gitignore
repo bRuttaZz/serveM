@@ -3,5 +3,6 @@ venv
 env
 build
 *.egg-info
+dist
 
 raw.*.py
