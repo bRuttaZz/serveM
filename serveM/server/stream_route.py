@@ -1,5 +1,5 @@
 import asyncio
-import settings
+from .. import settings
 from typing import Callable
 
 

@@ -3,7 +3,7 @@ import os
 import io
 from pathlib import Path
 from typing import Callable
-from settings import PUBLIC_DIR_PATH, STATIC_FILE_CHUNK_SIZE
+from ..settings import PUBLIC_DIR_PATH, STATIC_FILE_CHUNK_SIZE
 
 EXTENSIONS = {
     "html": "text/html",

@@ -1,10 +1,10 @@
 # access stream from portal
 
-import settings
 import dbus
 from typing import Callable
 from gi.repository import Gst
 from dbus.mainloop.glib import DBusGMainLoop
+from .. import settings
 
 class DesktopPortal:
     def __init__(self) -> None:

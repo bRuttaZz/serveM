@@ -1,4 +1,4 @@
-import settings
+from .. import settings
 from gi.repository import Gst
 
 class StreamMan:

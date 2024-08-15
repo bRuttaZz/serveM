@@ -4,7 +4,7 @@ from gi.repository import GObject, Gio, GLib
 
 from .stream_route import STREAM_ROUTES, stream_route_handler
 from .static_routes import static_route_handler
-import settings
+from .. import settings
 
 async def server(scope:dict, receive:Callable, send:Callable):
     if scope['path'] in STREAM_ROUTES:

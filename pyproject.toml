@@ -17,10 +17,45 @@ description = "A simple screen sharing server for modern GNU/LINUX desktops!"
 requires-python = ">=3.8"
 readme = "README.md"
 dynamic = ["version", "dependencies"]
-authors = [{ name = "@bRuttaZz" }]
+authors = [{ name = "@bRuttaZz", email = "agrajpdasprivate@gmail.com" }]
+license = { file = "LICENSE" }
+keywords = [
+    "stmp",
+    "sitty-talky",
+    "sittytalky",
+    "LAN",
+    "WLAN",
+    "peer-discovery",
+    "Messaging",
+    "protocol",
+    "multicast dns",
+    "dns",
+    "udp",
+    "tcp",
+]
+classifiers = [
+    'Development Status :: 4 - Beta',
+    'Intended Audience :: End Users/Desktop ',
+    'Intended Audience :: Developers',
+    'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
+    'Operating System :: POSIX',
+    'Operating System :: POSIX :: Linux',
+    'Operating System :: Unix',
+    'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+    'Programming Language :: Python :: 3.12',
+    'Programming Language :: Python :: 3.13',
+    'Topic :: Adaptive Technologies',
+    'Topic :: Internet',
+    'Topic :: Communications :: File Sharing',
+    'Topic :: Desktop Environment :: Window Managers',
+    'Natural Language :: English',
+]
 
 [project.scripts]
-contester = "serveM.main:main"
+servem = "serveM.main:main"
 
 [project.urls]
-Repository = "https://gitlab.com/RnD-Pixdynamics/contester.git"
+Repository = "https://github.com/bRuttaZz/serveM.git"
