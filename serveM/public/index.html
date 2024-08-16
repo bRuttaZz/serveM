@@ -10,7 +10,43 @@
             <h1>ServeM</h1>
             <p>Just a screen share server, for GNU/LINUX</p>
             <br />
-            <img src="/stream" height="90%" width="90%" />
+            <div style="position: relative">
+                <img src="/stream" height="90%" width="90%" id="stream" />
+                <svg
+                    id="fc-toggle"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-arrows-fullscreen"
+                    viewBox="0 0 16 16"
+                    style="
+                        position: absolute;
+                        top: 10px;
+                        left: calc(5% + 10px);
+                        background: white;
+                        padding: 4px;
+                        border-radius: 2px;
+                    "
+                >
+                    <path
+                        fill-rule="evenodd"
+                        d="M5.828 10.172a.5.5 0 0 0-.707 0l-4.096 4.096V11.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H4.5a.5.5 0 0 0 0-1H1.732l4.096-4.096a.5.5 0 0 0 0-.707m4.344 0a.5.5 0 0 1 .707 0l4.096 4.096V11.5a.5.5 0 1 1 1 0v3.975a.5.5 0 0 1-.5.5H11.5a.5.5 0 0 1 0-1h2.768l-4.096-4.096a.5.5 0 0 1 0-.707m0-4.344a.5.5 0 0 0 .707 0l4.096-4.096V4.5a.5.5 0 1 0 1 0V.525a.5.5 0 0 0-.5-.5H11.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707m-4.344 0a.5.5 0 0 1-.707 0L1.025 1.732V4.5a.5.5 0 0 1-1 0V.525a.5.5 0 0 1 .5-.5H4.5a.5.5 0 0 1 0 1H1.732l4.096 4.096a.5.5 0 0 1 0 .707"
+                    />
+                </svg>
+            </div>
         </center>
     </body>
+    <script>
+        document.getElementById("fc-toggle")?.addEventListener("click", () => {
+            document
+                .getElementById("stream")
+                .requestFullscreen()
+                .catch((err) => {
+                    alert(
+                        "Seemslike your browser don't support this toggle right now :(",
+                    );
+                });
+        });
+    </script>
 </html>

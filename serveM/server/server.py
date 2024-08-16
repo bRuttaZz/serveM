@@ -1,3 +1,4 @@
+import socket
 import uvicorn
 from typing import Callable
 from gi.repository import GObject, Gio, GLib
@@ -27,7 +28,8 @@ class WebServer(GObject.Object):
         """Run the blocking operation in a worker thread."""
         print(f"[{self.__class__.__name__}] starting web server..")
         try:
-            uvicorn.run(server, host="0.0.0.0", port=settings.PORT, backlog=10)
+            ip = socket.gethostbyname(socket.gethostname())
+            uvicorn.run(server, host=ip, port=settings.PORT, backlog=10)
         except  Exception as exp:
             print(f"Error booting up web server : ", exp)
         task.return_error(GLib.Error())
