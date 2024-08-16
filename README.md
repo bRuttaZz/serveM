@@ -18,6 +18,11 @@ sudo dnf install python3-gi gstreamer1 gstreamer1-plugins-base gstreamer1-plugin
 # arch linux
 sudo pacman -S python-gobject gstreamer
 ```
+- Pyhon dbus package.
+```sh
+pip install dbus-python
+# prefer to install using system package manager
+```
 
 
 Lastly, the service is packaged as a Python CLI that can be installed with,
