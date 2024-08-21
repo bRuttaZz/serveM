@@ -1,5 +1,7 @@
 # ServeM
 
+<img src=".assets/logo.png" width=130 align=right>
+
 [![pypi](https://img.shields.io/pypi/v/servem.svg)](https://pypi.org/project/servem/)
 [![Release](https://img.shields.io/github/release/bruttazz/servem.svg)](https://github.com/bruttazz/servem/releases/latest)
 [![Release](https://github.com/bruttazz/servem/actions/workflows/release.yml/badge.svg)](https://github.com/bRuttaZz/servem/actions/workflows/release.yml)
